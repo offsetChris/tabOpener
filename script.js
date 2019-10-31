@@ -2,7 +2,7 @@
 
   function openTabs(url) {
     setTimeout(function(){
-      console.log(url);
+      console.log('Opening tab for: ',url);
       window.open(url, "_blank");
     }, 500)
   }
@@ -17,7 +17,6 @@
   button.addEventListener("click", function(e){
     var submittedText = document.getElementById("urls").value;
     var urlArray = submittedText.split(/\r?\n/g);
-    console.log(urlArray);
     run(urlArray);
   });
 })();
